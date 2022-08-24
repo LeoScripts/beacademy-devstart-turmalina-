@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+tr td:nth-child(n + 10),
+tr th:nth-child(n + 10) {
+  border-radius: 0 0.625rem 0.625rem 0;
+}
+
+tr td:nth-child(1),
+tr th:nth-child(1) {
+  border-radius: 0.625rem 0 0 0.625rem;
+}
+
+.btn-success {
+  @apply py-2 px-2 bg-green-600 no-underline rounded-lg text-white font-sans font-semibold text-sm;
+}
+
+.btn-success:hover {
+  @apply text-white bg-green-500;
+}
+
+.btn-alert {
+  @apply py-2 px-2 bg-orange-500 no-underline rounded-lg text-white font-sans font-semibold text-sm;
+}
+
+.btn-alert:hover {
+  @apply text-white bg-orange-400;
+}
+
+.btn-danger {
+  @apply py-2 px-2 bg-red-500 no-underline rounded-lg text-white font-sans font-semibold text-sm;
+}
+
+.btn-danger:hover {
+  @apply text-white bg-red-400;
+}
+
+.btn-radio {
+  @apply text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
+}
